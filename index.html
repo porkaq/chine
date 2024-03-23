@@ -68,25 +68,28 @@
                 Новости
             </h2>
             <div class="news-inner">
-                <div class="news-wrapper" style="background-color: #FBDF9D;">
+                <div class="news-wrapper">
                     <div class="news-img">
-                        <img src="news/1.jpg" alt="">
+                        <img src="news/1.jpg" alt="" style="top: -30px;">
                     </div>
-                    <div class="tags">
-                        <div class="tag">Университет</div>
-                        <div class="tag">Инновации</div>
-                    </div>
-                    <h3>
-                        lorem ipsun lala
-                    </h3>
-                    <div class="date">
-                        20.02.2004
+                    <div class="news-content" style="background-color: #fbdf9d61;">
+                        <div class="tags">
+                            <div class="tag">Университет</div>
+                            <div class="tag">Инновации</div>
+                        </div>
+                        <h3>
+                            lorem ipsun lala
+                        </h3>
+                        <div class="date">
+                            20.02.2004
+                        </div>
                     </div>
                 </div>
-                <div class="news-wrapper" style="background-color: #FBC99D;">
+                <div class="news-wrapper">
                     <div class="news-img">
                         <img src="news/2.jpg" alt="">
                     </div>
+                    <div class="news-content" style="background-color: #c8ddbb96;">
                     <div class="tags">
                         <div class="tag">Университет</div>
                         <div class="tag">Инновации</div>
@@ -96,12 +99,14 @@
                     </h3>
                     <div class="date">
                         20.02.2004
+                    </div>
                     </div>
                 </div>
-                <div class="news-wrapper" style="background-color: #FBB39D;">
+                <div class="news-wrapper">
                     <div class="news-img">
-                        <img src="news/3.jpg" alt="">
+                        <img src="news/3.jpg" alt="" style="top: -20px;">
                     </div>
+                    <div class="news-content" style="background-color: #b6e2ddab;">
                     <div class="tags">
                         <div class="tag">Университет</div>
                         <div class="tag">Инновации</div>
@@ -111,6 +116,7 @@
                     </h3>
                     <div class="date">
                         20.02.2004
+                    </div>
                     </div>
                 </div>
             </div>
@@ -410,7 +416,7 @@
         }
 
         .news-inner .news-wrapper {
-            /* background-color: #f7f7f7; */
+            background-color: #f7f7f7;
             width: 22%;
             min-width: 350px;
             position: relative;
@@ -419,6 +425,7 @@
             flex-direction: column;
             cursor: pointer;
             overflow: hidden;
+            isolation: isolate;
         }
 
         .news-wrapper .news-img {
@@ -427,17 +434,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
         }
 
         .news-img img {
-            width: auto;
-            height: auto;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             min-width: 100%;
             min-height: 100%;
         }
-
+        .news-content {
+            background-color: #56acf6b0;
+            backdrop-filter: blur(5px);
+        }
         .tags {
             display: flex;
             margin: 1px;
@@ -492,25 +504,25 @@
             padding: 1em;
         }
         .faculty-inner .item:nth-child(1) {
-            background-color: #B6E2DD;
+            background: linear-gradient(45deg, #B6E2DD, #b6c9e2, #b6e2bb);
         }
         .faculty-inner .item:nth-child(2) {
-            background-color: #C8DDBB;
+            background: linear-gradient(45deg, #C8DDBB, #ddd5bb, #bbddda);
         }
         .faculty-inner .item:nth-child(3) {
-            background-color: #E9E5AF;
+            background: linear-gradient(45deg, #E9E5AF, #e9d2af, #dbe9af);
         }
         .faculty-inner .item:nth-child(4) {
-            background-color: #FBDF9D;
+            background: linear-gradient(45deg, #FBDF9D, #fbc89d, #f3fb9d);
         }
         .faculty-inner .item:nth-child(5) {
-            background-color: #FBC99D;
+            background: linear-gradient(45deg, #fbc89d, #fbb79d, #fb9d9d);
         }
         .faculty-inner .item:nth-child(6) {
-            background-color: #FBB39D;
+            background: linear-gradient(45deg, #fba29d, #fb9d9d, #fb9dc7);
         }
         .faculty-inner .item:nth-child(7) {
-            background-color: #f1b7b5;
+            background: linear-gradient(45deg, #f1b5db, #e6b5f1, #ceb5f1);
         }
 
         /* .faculty-inner .item:has(.left) {
