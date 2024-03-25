@@ -39,25 +39,25 @@
                 Почему стоит выбрать <span>нас</span>?
             </h2>
             <div class="about-us-inner">
-                <div class="item"
-                    style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.15)), url(about/11.jpg); background-position: center 100%;">
+                <div class="item light-bg"
+                    style="background-image: url(about/11.jpg); background-position: center 100%;">
                     Согласно официальной статистике – трудоустройство выпускников института составляет
                     более 95%</div>
-                <div class="item"
-                    style="background-image: linear-gradient(to top, rgb(0 0 0 / 10%), rgb(0 0 0 / 28%), rgb(0 0 0 / 10%)), url(about/22.jpg); color: white;">
+                <div class="item dark-bg"
+                    style="background-image: url(about/22.jpg); color: white;">
                     Институт многонационален и приветствует дружбу между народами. В институте
                     обучаются граждане разных стран – России, Китая, Монголии, р. Беларусь, Казахстана,
                     Узбекистана, Туркмении, ЮАР, Бенина, Конго и других</div>
-                <div class="item"
-                    style="background-image: linear-gradient(to top, rgb(0 0 0 / 10%), rgb(0 0 0 / 28%), rgb(0 0 0 / 10%)), url(about/about3.jpg); color: white;">
+                <div class="item dark-bg"
+                    style="background-image: url(about/about3.jpg); color: white;">
                     В институте существуют программы двойного дипломирования «без потери времени»,
                     то есть, за одно и то же время возможно освоить 2 специальности.</div>
-                <div class="item"
-                    style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.1)), url(about/about5.jpg);">
+                <div class="item light-bg"
+                    style="background-image: url(about/about5.jpg);">
                     В институте имеются все уровни экономического образования: среднее специальное
                     (колледж), бакалавриат, магистратура, аспирантура и докторантура</div>
-                <div class="item"
-                    style="background-image: linear-gradient(to top, rgb(0 0 0 / 10%), rgb(0 0 0 / 28%), rgb(0 0 0 / 10%)), url(about/about4.jpg); color: white;">
+                <div class="item dark-bg"
+                    style="background-image: url(about/about4.jpg); color: white;">
                     Функционирует диссертационный совет по защите кандидатских и докторских
                     диссертаций ИРНИТУ.07.01 (Приказ о создании № 640-О) Специальности: 5.2.3. -
                     Региональная и отраслевая экономика; 5.2.6. - Менеджмент</div>
@@ -72,7 +72,7 @@
                     <div class="news-img">
                         <img src="news/1.jpg" alt="" style="top: -30px;">
                     </div>
-                    <div class="news-content" style="background-color: #fbdf9d61;">
+                    <div class="news-content">
                         <div class="tags">
                             <div class="tag">Университет</div>
                             <div class="tag">Инновации</div>
@@ -89,7 +89,7 @@
                     <div class="news-img">
                         <img src="news/2.jpg" alt="">
                     </div>
-                    <div class="news-content" style="background-color: #c8ddbb96;">
+                    <div class="news-content">
                     <div class="tags">
                         <div class="tag">Университет</div>
                         <div class="tag">Инновации</div>
@@ -106,7 +106,7 @@
                     <div class="news-img">
                         <img src="news/3.jpg" alt="" style="top: -20px;">
                     </div>
-                    <div class="news-content" style="background-color: #b6e2ddab;">
+                    <div class="news-content">
                     <div class="tags">
                         <div class="tag">Университет</div>
                         <div class="tag">Инновации</div>
@@ -363,18 +363,28 @@
             background-repeat: no-repeat, no-repeat;
             background-size: cover, cover;
             font-size: 1.5em;
+            isolation: isolate;
         }
 
-        /* .about-us-inner .item::after {
+        .about-us-inner .item::after {
             position: absolute;
             content: '';
-            width: 2em;
-            height: 0.5em;
-            top: 0;
-            left: 0;
-            border-radius: .5em;
-            background-color: red;
-        } */
+            inset: 0;
+            z-index: -1;
+            transition: opacity 0.2s linear;
+            opacity: 0.8;
+        }
+
+        .about-us-inner .item.light-bg::after {
+            background-image: linear-gradient(to top, rgba(255, 255, 255, 0.188), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.188));
+        }
+        .about-us-inner .item.dark-bg:after {
+            background-image: linear-gradient(to top, rgb(0 0 0 / 12.5%), rgb(0 0 0 / 35%), rgb(0 0 0 / 12.5%));
+        }
+        .about-us-inner .item:hover::after {
+            opacity: 1;
+        }
+
 
         /* .about-us-inner .item:hover {
             background-color: var(--second-color);
@@ -435,7 +445,24 @@
             justify-content: center;
             align-items: center;
         }
-
+        .news-wrapper:nth-child(1) .news-content {
+            background-color: #fbdf9d61;
+        }
+        .news-wrapper:nth-child(2) .news-content {
+            background-color: #c8ddbb96;
+        }
+        .news-wrapper:nth-child(3) .news-content {
+            background-color: #b6e2ddab;
+        }
+        .news-wrapper:nth-child(1):hover .news-content {
+            background-color: #fbdf9da6;
+        }
+        .news-wrapper:nth-child(2):hover .news-content {
+            background-color: #c8ddbbd3;
+        }
+        .news-wrapper:nth-child(3):hover .news-content {
+            background-color: #b6e2dddc;
+        }
         .news-img img {
             position: absolute;
             top: 0;
@@ -449,6 +476,7 @@
         .news-content {
             background-color: #56acf6b0;
             backdrop-filter: blur(5px);
+            transition: background-color 0.5s linear;
         }
         .tags {
             display: flex;
@@ -495,35 +523,39 @@
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            /* gap: 2em; */
+            gap: 2em;
         }
 
         .faculty-inner .item {
             width: 100%;
             overflow: hidden;
+            background-color: rgb(215, 215, 215);
+        }
+        .faculty-inner .item p {
             padding: 1em;
         }
-        .faculty-inner .item:nth-child(1) {
-            background: linear-gradient(45deg, #B6E2DD, #b6c9e2, #b6e2bb);
+        /* .faculty-inner .item:nth-child(1) {
+            background: linear-gradient(90deg, #B6E2DD, #b6c9e2, #b6e2bb);
         }
         .faculty-inner .item:nth-child(2) {
-            background: linear-gradient(45deg, #C8DDBB, #ddd5bb, #bbddda);
+            background: linear-gradient(90deg, #C8DDBB, #ddd5bb, #bbddda);
         }
         .faculty-inner .item:nth-child(3) {
-            background: linear-gradient(45deg, #E9E5AF, #e9d2af, #dbe9af);
+            background: linear-gradient(90deg, #E9E5AF, #e9d2af, #dbe9af);
         }
         .faculty-inner .item:nth-child(4) {
-            background: linear-gradient(45deg, #FBDF9D, #fbc89d, #f3fb9d);
+            background: linear-gradient(90deg, #FBDF9D, #fbc89d, #f3fb9d);
         }
         .faculty-inner .item:nth-child(5) {
-            background: linear-gradient(45deg, #fbc89d, #fbb79d, #fb9d9d);
+            background: linear-gradient(90deg, #fbc89d, #fbb79d, #fb9d9d);
         }
         .faculty-inner .item:nth-child(6) {
-            background: linear-gradient(45deg, #fba29d, #fb9d9d, #fb9dc7);
+            background: linear-gradient(90deg, #fba29d, #fb9d9d, #fb9dc7);
         }
         .faculty-inner .item:nth-child(7) {
-            background: linear-gradient(45deg, #f1b5db, #e6b5f1, #ceb5f1);
-        }
+            background: linear-gradient(90deg, #f1b5db, #e6b5f1, #ceb5f1);
+        } */
+
 
         /* .faculty-inner .item:has(.left) {
             background-color: rgb(170 211 246);
@@ -535,12 +567,10 @@
 
         .faculty-inner .left {
             float: left;
-            margin: 1em 1em 1em 0;
-        }
-
-        .faculty-inner .right {
-            float: right;
-            margin-left: 1em;
+            height: 100%;
+            width: 255px;
+            object-fit: cover;
+            margin: 0em 1em 0em 0;
         }
 
         footer {
