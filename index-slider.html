@@ -18,10 +18,6 @@
 
 <body>
     <header>
-        <div class="logos">
-                <img class="ieup-logo" src="ieup.png" alt="">
-                <img class="polytech-logo" src="polytech.svg" alt="">
-        </div>
         <div class="lang">
             <span class="active">Русский</span>
             <span>中文</span>
@@ -29,9 +25,14 @@
     </header>
     <div class="shapka">
         <div class="top">
+            <div class="pair-logo">
+                <img class="ieup-logo" src="ieup.png" alt="">
+                <img class="polytech-logo hidden-logo" src="polytech.svg" alt="">
+            </div>
             <h1>
                 Институт экономики, управления и права
             </h1>
+            <img class="polytech-logo" src="polytech.svg" alt="">
         </div>
         <div class="bottom">
             <p>
@@ -70,159 +71,138 @@
                     Региональная и отраслевая экономика; 5.2.6. - Менеджмент</div>
             </div>
         </section>
+
         <section class="news">
             <h2>
                 Новости
             </h2>
-            <div class="news-inner">
-                <div class="news-wrapper">
-                    <div class="news-img">
-                        <img src="news/1.jpg" alt="" style="top: -30px;">
-                    </div>
-                    <div class="news-content">
-                        <div class="tags">
-                            <div class="tag">Университет</div>
-                            <div class="tag">Инновации</div>
+            <div class="slider actions" data-params="{'components':['markers','arrows'],'time':5,'delay_value':5,'autostart':true, 'isReSize': true}">
+                <div class="slider-item slider-item-active">
+                    <div class="news-wrapper">
+                        <div class="img-wrapper">
+                            <img src="news/1.jpg" alt="">
+                            <h3>Lorem rororloel lel</h3>
                         </div>
-                        <h3>
-                            lorem ipsun lala
-                        </h3>
-                        <div class="date">
-                            20.02.2004
-                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos iusto iure, veniam voluptate accusantium voluptatum commodi dolore minus, omnis quasi accusamus vel, eius nam unde animi temporibus et voluptatem modi.</p>
                     </div>
                 </div>
-                <div class="news-wrapper">
-                    <div class="news-img">
-                        <img src="news/2.jpg" alt="">
-                    </div>
-                    <div class="news-content">
-                    <div class="tags">
-                        <div class="tag">Университет</div>
-                        <div class="tag">Инновации</div>
-                    </div>
-                    <h3>
-                        lorem ipsun lala
-                    </h3>
-                    <div class="date">
-                        20.02.2004
-                    </div>
+                <div class="slider-item">
+                    <div class="news-wrapper">
+                    <div class="img-wrapper">
+                            <img src="news/2.jpg" alt="">
+                            <h3>Lorem rororloel fgfd sawe el</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magni enim non animi voluptate sint, consequatur libero quos reiciendis quisquam. Id ducimus voluptatum dolores perferendis velit voluptates illum animi eos!</p>
                     </div>
                 </div>
-                <div class="news-wrapper">
-                    <div class="news-img">
-                        <img src="news/3.jpg" alt="" style="top: -20px;">
+                <div class="slider-item">
+                    <div class="news-wrapper">
+                        <div class="img-wrapper">
+                            <img src="news/3.jpg" alt="">
+                            <h3>Lorem fdsgfds fa oel lel</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, recusandae veniam? Quasi delectus perspiciatis illo aliquam repudiandae, mollitia laboriosam nisi excepturi? A dolores reiciendis ab voluptates nihil voluptatem alias deleniti?</p>
                     </div>
-                    <div class="news-content">
-                    <div class="tags">
-                        <div class="tag">Университет</div>
-                        <div class="tag">Инновации</div>
-                    </div>
-                    <h3>
-                        lorem ipsun lala
-                    </h3>
-                    <div class="date">
-                        20.02.2004
-                    </div>
-                    </div>
+                </div>
+                <div class="border">
+
                 </div>
             </div>
         </section>
 
-
         <section class="faculty">
             <h2>За Институтом экономики, управления и права закреплены кафедры:</h2>
-            <div class="slider actions" data-params="{'components':['markers','arrows'],'time':5,'delay_value':5,'autostart':true, 'isReSize': true}">
-                <div class="slider-item slider-item-active">
-                    <div class="item">
-                        <img class="left" src="faculity/1.png" alt="">
-                        <h3>Кафедра «Юриспруденции»</h3>
-                        <p>кафедра «Юриспруденции» осуществляет подготовку: бакалавров по направлению 40.03.01
-                            «Юриспруденция» профили: «Уголовно-правовой» «Гражданско-правовой» На кафедре осуществляется
-                            подготовка аспирантов по по направлению подготовки 40.06.01 «Юриспруденция», направленность
-                            подготовки 12.00.01 «Теория и история права и государства: история учений о праве и
-                            государстве».</p>
-                    </div>
+            <div class="faculty-inner">
+                <div class="item">
+                    <h3>Кафедра «Юриспруденции»</h3>
+                    <p>кафедра «Юриспруденции» осуществляет подготовку: бакалавров по направлению 40.03.01
+                        «Юриспруденция» профили: «Уголовно-правовой» «Гражданско-правовой» На кафедре осуществляется
+                        подготовка аспирантов по по направлению подготовки 40.06.01 «Юриспруденция», направленность
+                        подготовки 12.00.01 «Теория и история права и государства: история учений о праве и
+                        государстве».</p>
+                        <div class="img-wrapper">
+                            <img src="faculity/i1.png" alt="">
+                        </div>
                 </div>
-                <div class="slider-item">
-                    <div class="item">
-                        <img class="left" src="faculity/2.png">
-                        <h3>Кафедра «Экономики и цифровых бизнес-технологий»</h3>
-                        <p>кафедра осуществляет подготовку: бакалавров: по направлению 38.03.01 «Экономика» профили:
-                            «Финансы и кредит», «Международная экономика и бизнес», «Государственные и муниципальные
-                            финансы», «Экономика и финансы топливно-энергетического комплекса». Специалистов: по направлению
-                            подготовки 38.05.01 «Экономическая безопасность» специализация:«Экономико-правовое обеспечение
-                            экономической безопасности»; направление подготовки 38.05.02 «Таможенное дело» специализация
-                            «Экономико – правовое обеспечение таможенной деятельности»; магистров: по направлению 38.04.01
-                            «Экономика» по магистерским программам: «Инженерная экономика и менеджмент в энергетическом и
-                            нефтегазовом комплексах», «Инновации и инвестиции в цифровой экономике», «МВА» (Экономика и
-                            управление в международном бизнесе), «Экономико-правовое регулирование внешнеэкономической
-                            деятельности и защита бизнеса» ; аспирантов: по научной специальности 5.2.3. «Региональная и
-                            отраслевая экономика»</p>
-                    </div>
+                <div class="item">
+                    <h3>Кафедра «Менеджмента»</h3>
+                    <p>Кафедра осуществляет подготовку: по направлениям бакалавриата: 38.03.02 – «Менеджмент»- профиль
+                        «Управление проектами»; «Производственный менеджмент», «Управление и организация бизнеса в
+                        отраслях ТЭК». Магистратура: 38.04.02– «Менеджмент» - программа « Стратегический менеджмент в
+                        ТЭК». Аспирантура: 38.06.01. Экономика, специальность (направленность) Экономика и управление
+                        народным хозяйством – по отраслям и сферам деятельности, в т.ч. экономика, организация и
+                        управление предприятиями, отраслями, комплексами, 5.2.6 Менеджмент (аспирантура)</p>
+                        <div class="img-wrapper">
+                            <img src="faculity/i2.png" alt="">
+                        </div>
                 </div>
-                <div class="slider-item">
-                    <div class="item">
-                        <img class="left" src="faculity/3.png">
-                        <h3>Кафедра «Менеджмента»</h3>
-                        <p>Кафедра осуществляет подготовку: по направлениям бакалавриата: 38.03.02 – «Менеджмент»- профиль
-                            «Управление проектами»; «Производственный менеджмент», «Управление и организация бизнеса в
-                            отраслях ТЭК». Магистратура: 38.04.02– «Менеджмент» - программа « Стратегический менеджмент в
-                            ТЭК». Аспирантура: 38.06.01. Экономика, специальность (направленность) Экономика и управление
-                            народным хозяйством – по отраслям и сферам деятельности, в т.ч. экономика, организация и
-                            управление предприятиями, отраслями, комплексами, 5.2.6 Менеджмент (аспирантура)</p>
-                    </div>
+                <div class="item">
+                    <h3>Кафедра «Рекламы и журналистики»</h3>
+                    <p>Кафедра «Рекламы и журналистики» осуществляет подготовку: бакалавров по направлению 42.03.01
+                        "Реклама и связи с общественностью", профиль подготовки "Маркетинг в рекламе и связях с
+                        общественностью" и по направлению 42.03.02 "Журналистика". Студенты кафедры под руководством
+                        преподавателей активно участвуют в журналистских и кинофестивалях: «Байкальская пресса»,
+                        «Золотая запятая», «Байкальский международный кинофестиваль «Человек и Природа», «Байкальский
+                        питчинг дебютантов», «Байкальский фестиваль регионального кино», а также в различных
+                        всероссийских и международных конкурсах журналистики и социальной рекламы.</p>
+                        <div class="img-wrapper">
+                            <img src="faculity/i3.png" alt="">
+                        </div>
                 </div>
-                <div class="slider-item">
-                    <div class="item">
-                        <img class="left" src="faculity/4.png">
-                        <h3>Кафедра «Экономики и цифровых бизнес-технологий»</h3>
-                        <p>Кафедра «Рекламы и журналистики» осуществляет подготовку: бакалавров по направлению 42.03.01
-                            "Реклама и связи с общественностью", профиль подготовки "Маркетинг в рекламе и связях с
-                            общественностью" и по направлению 42.03.02 "Журналистика". Студенты кафедры под руководством
-                            преподавателей активно участвуют в журналистских и кинофестивалях: «Байкальская пресса»,
-                            «Золотая запятая», «Байкальский международный кинофестиваль «Человек и Природа», «Байкальский
-                            питчинг дебютантов», «Байкальский фестиваль регионального кино», а также в различных
-                            всероссийских и международных конкурсах журналистики и социальной рекламы.</p>
-                    </div>
+                <div class="item">
+                    <h3>Кафедра «Социологии и психологии»</h3>
+                    <p>На кафедре «Социологии и психологии» осуществляется подготовка аспирантов по направлению 5.4.4.
+                        Социальная структура, социальные институты и процессы. Программа направлена на анализ социальных
+                        изменений в обществах, находящихся в состоянии ограничения/перехода. При кафедре функционирует
+                        Центр комплексных социологических исследований, сотрудники которого обладают высоким уровнем
+                        квалификации и практическими навыками ведения практической социологической работы</p>
+                        <div class="img-wrapper">
+                            <img src="faculity/i4.png" alt="">
+                        </div>
                 </div>
-                <div class="slider-item">
-                    <div class="item">
-                        <img class="left" src="faculity/5.png">
-                        <h3>Кафедра «Социологии и психологии»</h3>
-                        <p>На кафедре «Социологии и психологии» осуществляется подготовка аспирантов по направлению 5.4.4.
-                            Социальная структура, социальные институты и процессы. Программа направлена на анализ социальных
-                            изменений в обществах, находящихся в состоянии ограничения/перехода. При кафедре функционирует
-                            Центр комплексных социологических исследований, сотрудники которого обладают высоким уровнем
-                            квалификации и практическими навыками ведения практической социологической работы</p>
-                    </div>
+                <div class="item">
+                    <h3>Кафедра «Теории права, конституционного и административного права»</h3>
+                    <p>Кафедра осуществляет подготовку бакалавров по направлению 40.03.01 «Юриспруденция» по
+                        уголовно-правовому и гражданско-правовому профилям подготовки; является выпускающей кафедрой по
+                        специальности 40.05.01 «Правовое обеспечение национальной безопасности», специализация –
+                        государственно-правовая; обеспечивает подготовку студентов всех направлений подготовки по
+                        дисциплине «Правоведение». На кафедре осуществляется подготовка аспирантов по направлению
+                        подготовки 40.06.01.Юриспруденция: Конституционное право; конституционный судебный процесс;
+                        муниципальное право</p>
+                        <div class="img-wrapper">
+                            <img src="faculity/i5.png" alt="">
+                        </div>
                 </div>
-                <div class="slider-item">
-                    <div class="item">
-                        <img class="left" src="faculity/6.png">
-                        <h3>Кафедра «Теории права, конституционного и административного права»</h3>
-                        <p>Кафедра осуществляет подготовку бакалавров по направлению 40.03.01 «Юриспруденция» по
-                            уголовно-правовому и гражданско-правовому профилям подготовки; является выпускающей кафедрой по
-                            специальности 40.05.01 «Правовое обеспечение национальной безопасности», специализация –
-                            государственно-правовая; обеспечивает подготовку студентов всех направлений подготовки по
-                            дисциплине «Правоведение». На кафедре осуществляется подготовка аспирантов по направлению
-                            подготовки 40.06.01.Юриспруденция: Конституционное право; конституционный судебный процесс;
-                            муниципальное право</p>
-                    </div>
+                <div class="item">
+                    <h3>Кафедра «Истории и философии»</h3>
+                    <p>На кафедре ведутся дисциплины «История (История России, всеобщая история)», «Критическое и
+                        системное мышление», «Философия». Для ряда направлений преподаются: «Юридическая логика»,
+                        «Политология», «Основы теории национальной безопасности», «Политические аспекты национальной
+                        безопасности». Для магистрантов – «Философия науки», «Методология научных исследований». Для
+                        аспирантов: «История и философия науки» (с приемом кандидатского экзамена), и «Методология
+                        научного исследования». Осуществляется подготовка аспирантов по направлениям 46.06.01
+                        «Исторические науки и археология», направленность «История науки и техники» (с 2022 г. – по
+                        научной специальности 5.6.6. «История науки и техники»)</p>
+                        <div class="img-wrapper">
+                            <img src="faculity/i6.png" alt="">
+                        </div>
                 </div>
-                <div class="slider-item">
-                    <div class="item">
-                        <img class="left" src="faculity/7.png">
-                        <h3>Кафедра «Истории и философии»</h3>
-                        <p>На кафедре ведутся дисциплины «История (История России, всеобщая история)», «Критическое и
-                            системное мышление», «Философия». Для ряда направлений преподаются: «Юридическая логика»,
-                            «Политология», «Основы теории национальной безопасности», «Политические аспекты национальной
-                            безопасности». Для магистрантов – «Философия науки», «Методология научных исследований». Для
-                            аспирантов: «История и философия науки» (с приемом кандидатского экзамена), и «Методология
-                            научного исследования». Осуществляется подготовка аспирантов по направлениям 46.06.01
-                            «Исторические науки и археология», направленность «История науки и техники» (с 2022 г. – по
-                            научной специальности 5.6.6. «История науки и техники»)</p>
-                    </div>
+                <div class="item">
+                    <h3>Кафедра «Экономики и цифровых бизнес-технологий»</h3>
+                    <p>кафедра осуществляет подготовку: бакалавров: по направлению 38.03.01 «Экономика» профили:
+                        «Финансы и кредит», «Международная экономика и бизнес», «Государственные и муниципальные
+                        финансы», «Экономика и финансы топливно-энергетического комплекса». Специалистов: по направлению
+                        подготовки 38.05.01 «Экономическая безопасность» специализация:«Экономико-правовое обеспечение
+                        экономической безопасности»; направление подготовки 38.05.02 «Таможенное дело» специализация
+                        «Экономико – правовое обеспечение таможенной деятельности»; магистров: по направлению 38.04.01
+                        «Экономика» по магистерским программам: «Инженерная экономика и менеджмент в энергетическом и
+                        нефтегазовом комплексах», «Инновации и инвестиции в цифровой экономике», «МВА» (Экономика и
+                        управление в международном бизнесе), «Экономико-правовое регулирование внешнеэкономической
+                        деятельности и защита бизнеса» ; аспирантов: по научной специальности 5.2.3. «Региональная и
+                        отраслевая экономика»</p>
+                        <div class="img-wrapper">
+                            <img src="faculity/i7.png" alt="">
+                        </div>
                 </div>
             </div>
         </section>
@@ -296,32 +276,11 @@
             gap: 1.5em;
             justify-content: space-between;
             align-items: center;
-            height: 100px;
+            height: 55px;
             width: 100%;
             background-color: #16233b;
             padding: 10px var(--x-padding);
             color: white;
-        }
-        header .logos {
-            display: flex;
-            align-items: center;
-            gap: 4em;
-            height: 100%;
-            width: 500px;
-        }
-        header .logos > img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            cursor: pointer;
-        }
-        header img.ieup-logo {
-            height: 90%;
-            aspect-ratio: 1 / 1;
-        }
-        header img.polytech-logo {
-            height: 70%;
-            aspect-ratio: 4 / 1;
         }
         .lang {
             display: flex;
@@ -340,7 +299,7 @@
         }
 
         .shapka {
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(head.png);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(head2.jpg);
             background-position: center center, center center;
             background-repeat: no-repeat, no-repeat;
             background-size: cover, cover;
@@ -349,7 +308,7 @@
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: space-between;
-            padding: 2em;
+            padding: 2em var(--x-padding);
             color: white;
         }
 
@@ -357,19 +316,35 @@
             display: flex;
             flex-wrap: nowrap;
             gap: 1.5em;
+            align-items: start;
+            justify-content: space-around;
         }
 
         .shapka .top h1 {
-            font-size: 2.2em;
+            font-size: 2.8em;
             flex-grow: 1;
+            margin: 0;
         }
-
+        .shapka .top img.ieup-logo {
+            cursor: pointer;
+            max-height: 100px;
+            aspect-ratio: 1 / 1;
+        }
+        .shapka .top img.polytech-logo {
+            cursor: pointer;
+            max-height: 35px;
+            aspect-ratio: 4 / 1;
+            opacity: 0.8;
+        }
+        .shapka .top .hidden-logo {
+            display: none;
+        }
         .shapka .bottom {
             max-width: 75%;
         }
 
         .shapka .bottom p {
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin: 0;
             padding: 0;
         }
@@ -378,8 +353,8 @@
             padding: 1.5em var(--x-padding);
         }
 
-        .about-us h2 {
-            font-size: 2.2em;
+        h2 {
+            font-size: 2.6em;
         }
 
         .about-us-inner {
@@ -406,7 +381,7 @@
             flex-grow: 1;
             width: calc(50% - 2em);
             min-width: 380px;
-            padding: calc(var(--x-padding) / 2) 1em;
+            padding: calc(var(--y-padding) * 4) calc(var(--x-padding) / 2);
             text-align: center;
             background-position: center center, center center;
             background-repeat: no-repeat, no-repeat;
@@ -465,10 +440,9 @@
         }
 
         .news h2 {
-            font-size: 2.2em;
         }
 
-        .news-inner {
+        /* .news-inner {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -526,7 +500,7 @@
             background-color: #56acf6b0;
             backdrop-filter: blur(5px);
             transition: background-color 0.5s linear;
-        }
+        } */
         .tags {
             display: flex;
             margin: 1px;
@@ -545,7 +519,7 @@
             border-radius: 9px;
         }
 
-        .news-wrapper h3 {
+        /* .news-wrapper h3 {
             margin: 0;
             padding: 1em;
             font-weight: bold;
@@ -558,57 +532,173 @@
             padding: 1em;
             text-align: right;
             color: var(--page-border-color);
+        } */
+
+        .news .slider {
+            height: 600px;
+            background: rgb(255, 255, 255);
+        }
+        .news .slider .border {
+            position: absolute;
+            inset: 0;
+            clip-path: polygon(0% 0%, 0% 100%, 4em 100%, 4em 3em, calc(100% - 4em) 3em, calc(100% - 4em) calc(100% - 3em), 4em calc(100% - 3em), 3em 100%, 100% 100%, 100% 0%);
+            background-color: white;
+            z-index: 2;
+        }
+        .news .slider-item {
+            width: 100%;
+            height: 100%;
+            color: black;
+            padding: 3em 4em;
+            background-color: transparent;
+        }
+        .news-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+        .news .slider-item:nth-child(1) .news-wrapper {
+            background: linear-gradient(45deg, rgb(201 205 212), rgb(94 129 232));
+        }
+        .news .slider-item:nth-child(2) .news-wrapper {
+            background: linear-gradient(45deg, #b1a25f, #cb6262);
+        }
+        .news .slider-item:nth-child(3) .news-wrapper {
+            background: linear-gradient(45deg, #d7ae5a, #b75d23);
+        }
+        .news .img-wrapper {
+            position: relative;
+            float: left;
+            width: fit-content;
+            max-width: 50%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: calc( var(--x-padding) / 2 );
+            isolation: isolate;
+        }
+        .news .img-wrapper::after {
+            position: absolute;
+            content: "";
+            inset: 0;
+            z-index: 1;
+            background: linear-gradient( to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0) );
+        }
+        .news .img-wrapper img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .news .img-wrapper h3 {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            z-index: 2;
+            font-size: 1.8em;
+        }
+        .news .slider-item p {
+            padding: calc( var(--x-padding) / 3 );
+            font-size: 1.3em;
+            margin: 0;
         }
 
         .faculty {
-            padding: 1.5em 2em;
+            padding: 1.5em var(--x-padding);
         }
 
         .faculty h2 {
-            font-size: 2.2em;
         }
 
         .faculty-inner {
             display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 2em;
         }
 
-        .faculty .item {
-            width: 100%;
+        .faculty-inner .item {
+            flex-grow: 1;
+            /* max-width: 600px; */
+            max-height: 1200px;
+            /* max-width: calc(50% - 2em); */
+            flex-basis: 550px;
+            /* flex-shrink: 0; */
+            /* padding-bottom: 20em; */
+            padding: 4em 4em 0em 4em;
             overflow: hidden;
-            /* background-color: rgb(215, 215, 215); */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            /* justify-content: space-between;*/
+        }
+        .faculty-inner .item h3 {
+            margin-top: 0;
+            font-size: 2.2em;
+        }
+        .faculty-inner .item p {
+            font-size: 1.3em;
+            padding-bottom: 2em;
+        }
+        .faculty-inner .item .img-wrapper {
+            display: flex;
+            align-self: center;
+            width: 8em;
+            height: 8em;
+            margin-top: auto;
+            margin-bottom: 4em;
+            filter: invert(1);
+        }
+        .faculty-inner .item .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
-        .faculty .item p {
+        /* .faculty .item p {
             padding: 1em;
         }
         .faculty .slider-item {
             padding: 2.5em calc(var(--gorizontal-field) / 4 + 3em);
-            /* background-color: #16233b; */
+            background-color: #16233b; 
+        } */
+        .faculty-inner .item:nth-child(1) {
+            background: linear-gradient(90deg, hsl(170, 43%, 70%), hsl(200, 43%, 70%), hsl(230, 43%, 70%));
         }
-        .faculty .slider-item:nth-child(1) .item {
-            background: linear-gradient(90deg, hsl(170, 43%, 80%), hsl(200, 43%, 80%), hsl(230, 43%, 80%));
+        /* .faculty-inner .item:nth-child(1)::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0.5em;
+            width: 100%;
+            height: 3em;
+            background-image: url(faculity/i1.png);
+            background-size: 4em 4em;
+            filter: invert(1);
+            background-repeat: space;
+            clip-path: polygon(0% 0%, 0% 100%, 4em 100%, 4em 4em, calc(100% - 4em) 4em, calc(100% - 4em) calc(100% - 4em), 4em calc(100% - 4em), 4em 100%, 100% 100%, 100% 0%); 
+        } */
+        .faculty-inner .item:nth-child(2) {
+            background: linear-gradient(90deg, hsl(260, 43%, 70%), hsl(290, 43%, 70%), hsl(320, 43%, 70%));
         }
-        .faculty .slider-item:nth-child(2) .item {
-            background: linear-gradient(90deg, hsl(260, 43%, 80%), hsl(290, 43%, 80%), hsl(320, 43%, 80%));
+        .faculty-inner .item:nth-child(3) {
+            background: linear-gradient(90deg, hsl(350, 43%, 70%), hsl(20, 43%, 70%), hsl(50, 43%, 70%));
         }
-        .faculty .slider-item:nth-child(3) .item {
-            background: linear-gradient(90deg, hsl(350, 43%, 80%), hsl(20, 43%, 80%), hsl(50, 43%, 80%));
+        .faculty-inner .item:nth-child(4) {
+            background: linear-gradient(90deg, hsl(80, 43%, 70%), hsl(110, 43%, 70%), hsl(140, 43%, 70%));
         }
-        .faculty .slider-item:nth-child(4) .item {
-            background: linear-gradient(90deg, hsl(80, 43%, 80%), hsl(110, 43%, 80%), hsl(140, 43%, 80%));
+        .faculty-inner .item:nth-child(5) {
+            background: linear-gradient(90deg, hsl(170, 43%, 70%), hsl(200, 43%, 70%), hsl(230, 43%, 70%));
         }
-        .faculty .slider-item:nth-child(5) .item {
-            background: linear-gradient(90deg, hsl(170, 43%, 80%), hsl(200, 43%, 80%), hsl(230, 43%, 80%));
+        .faculty-inner .item:nth-child(6) {
+            background: linear-gradient(90deg, hsl(260, 43%, 70%), hsl(290, 43%, 70%), hsl(320, 43%, 70%));
         }
-        .faculty .slider-item:nth-child(6) .item {
-            background: linear-gradient(90deg, hsl(260, 43%, 80%), hsl(290, 43%, 80%), hsl(320, 43%, 80%));
-        }
-        .faculty .slider-item:nth-child(7) .item {
-            background: linear-gradient(90deg, hsl(350, 43%, 80%), hsl(20, 43%, 80%), hsl(50, 43%, 80%));
-        }
+        .faculty-inner .item:nth-child(7) {
+            background: linear-gradient(90deg, hsl(350, 43%, 70%), hsl(20, 43%, 70%), hsl(50, 43%, 70%));
+        } 
 
 
         /* .faculty-inner .item:has(.left) {
@@ -618,30 +708,50 @@
         .faculty-inner .item:has(.right) {
             background-color: rgb(170, 192, 246);
         } */
-
-        .faculty .left {
-            float: left;
-            height: 100%;
-            width: 25%;
+        /* .faculty-inner .img-wrapper {
+            position: relative;
+            height: 55%;
+            width: 100%;
             object-fit: cover;
-            margin: 0em 1em 0em 0em;
         }
+        .faculty-inner .img-wrapper .img-wrapper-inner::after {
+            position: absolute;
+            content: '';
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0));
+        }
+        .faculty-inner .item:nth-child(even) .img-wrapper .img-wrapper-inner::after {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.247), rgba(0, 0, 0, 0));
+        }
+        .faculty-inner .img-wrapper-inner {
+            position: absolute;
+            top: -10%;
+            left: 0;
+            width: 100%;
+            height: 110%;
+        }
+        .faculty-inner .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
 
         footer {
-            padding: 1.5em 2em;
+            padding: 1.5em var(--x-padding);
             background: linear-gradient(to bottom, rgb(170, 192, 246), rgb(124, 156, 237));
         }
 
         footer h2 {
-            font-size: 2.2em;
             margin: 0;
             padding: 0;
+            margin-bottom: 0.7em;
         }
 
         footer .contacts-inner {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.5em 3em;
+            gap: 2em 3.5em;
+            font-size: 1.1em;
         }
 
         .contacts-inner .item {
@@ -655,39 +765,75 @@
         @media (max-width: 859px) {
 
             .news,
-            .about-us {
+            .about-us,
+            .faculty {
                 padding: 1em;
             }
-
+            .faculty-inner .item {
+                padding: 2em 2em 0 2em;
+            }
             body {
                 --x-padding: 3em;
             }
-            .slider {
+            .shapka {
+                font-size: clamp(0.6em, 2.3vw, 0.8em);
+                min-height: 60vh;
+            }
+            .shapka .top {
+                flex-direction: column;
+            }
+            .shapka .top .polytech-logo {
+                display: none;
+            }
+            .shapka .top .polytech-logo.hidden-logo {
+                display: block;
+            }
+            .shapka .bottom {
+                max-width: 100%;
+            }
+            .shapka .top .pair-logo {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .shapka .top img.ieup-logo {
+                max-height: 80px;
+            }
+            .shapka .top img.polytech-logo {
+                max-height: 25px;
+            }
+            /* .slider {
                 height: 250px;
             }
             .faculty .slider-item {
                 padding: 1em;
-            }
+            } */
         }
 
         @media (max-width: 399px) {
-
-            .news-inner .news-wrapper,
+            .news,
+            .about-us,
+            .faculty {
+                padding: 1em 0.5em;
+            }
             .about-us-inner .item {
                 min-width: 100%;
+                padding: 1em;
             }
-            .faculty .left {
-                display: none;
+            .faculty-inner .item {
+                font-size: 0.8em;
             }
-            .faculty {
-                padding: 2em 0.125em;
+            .faculty-inner .item h3 {
+                font-size: 1.8em;
             }
-            .faculty h3 {
-                margin-inline: 1em;
+            h2 {
+                font-size: 2em;
             }
-            .faculty .slider-item {
+            /* .faculty .slider-item {
                 padding: 0.3em;
-            }
+            } */
         }
     </style>
 </body>
