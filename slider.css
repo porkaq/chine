@@ -139,11 +139,10 @@ body {
 }
 
 .slider .slider-arrow-right-wrapper {
-	right: calc(var(--gorizontal-field) / 4);
-	padding-right: 0.1em;
+	right: 0;
 }
 .slider .slider-arrow-left-wrapper {
-	left: calc(var(--gorizontal-field) / 4);
+	left: 0;
 }
 .slider .slider-arrow {
 	position: absolute;

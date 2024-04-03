@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="slider.css">
     <script src="page.js"></script>
     <script src="slider.js"></script>
@@ -25,20 +26,17 @@
     </header>
     <div class="shapka">
         <div class="top">
-            <div class="pair-logo">
-                <img class="ieup-logo" src="ieup.png" alt="">
-                <img class="polytech-logo hidden-logo" src="polytech.svg" alt="">
-            </div>
+            <img class="ieup-logo" src="ieup.png" alt="">
             <h1>
                 Институт экономики, управления и права
             </h1>
-            <img class="polytech-logo" src="polytech.svg" alt="">
         </div>
         <div class="bottom">
             <p>
                 Институт экономики, управления и права Иркутского национального исследовательского технического
                 университета приглашает всех желающих для поступления.
             </p>
+            <img class="polytech-logo" src="polytech.svg" alt="">
         </div>
     </div>
     <main>
@@ -262,7 +260,7 @@
         *::before,
         *::after {
             box-sizing: border-box;
-            font-family: "Ubuntu", sans-serif;
+            font-family: "Golos Text", sans-serif;
         }
 
         body {
@@ -321,16 +319,16 @@
         }
 
         .shapka .top h1 {
-            font-size: 2.8em;
+            font-size: 4.3em;
             flex-grow: 1;
             margin: 0;
         }
         .shapka .top img.ieup-logo {
             cursor: pointer;
-            max-height: 100px;
+            max-height: 200px;
             aspect-ratio: 1 / 1;
         }
-        .shapka .top img.polytech-logo {
+        .shapka img.polytech-logo {
             cursor: pointer;
             max-height: 35px;
             aspect-ratio: 4 / 1;
@@ -340,7 +338,14 @@
             display: none;
         }
         .shapka .bottom {
-            max-width: 75%;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            margin-inline: calc(-1 * var(--x-padding));
+            padding-block: 1em;
+            margin-bottom: -2em;
+            padding-inline: var(--x-padding);
+            background-color: #16233b;
         }
 
         .shapka .bottom p {
@@ -440,6 +445,7 @@
         }
 
         .news h2 {
+            margin-bottom: 0;
         }
 
         /* .news-inner {
@@ -537,6 +543,7 @@
         .news .slider {
             height: 600px;
             background: rgb(255, 255, 255);
+            margin-inline: -4em;
         }
         .news .slider .border {
             position: absolute;
@@ -555,15 +562,16 @@
         .news-wrapper {
             width: 100%;
             height: 100%;
+            border: 2px solid #16233b;
         }
         .news .slider-item:nth-child(1) .news-wrapper {
-            background: linear-gradient(45deg, rgb(201 205 212), rgb(94 129 232));
+            /* background: linear-gradient(45deg, rgb(201 205 212), rgb(94 129 232)); */
         }
         .news .slider-item:nth-child(2) .news-wrapper {
-            background: linear-gradient(45deg, #b1a25f, #cb6262);
+            /* background: linear-gradient(45deg, #b1a25f, #cb6262); */
         }
         .news .slider-item:nth-child(3) .news-wrapper {
-            background: linear-gradient(45deg, #d7ae5a, #b75d23);
+            /* background: linear-gradient(45deg, #d7ae5a, #b75d23); */
         }
         .news .img-wrapper {
             position: relative;
@@ -738,7 +746,9 @@
 
         footer {
             padding: 1.5em var(--x-padding);
-            background: linear-gradient(to bottom, rgb(170, 192, 246), rgb(124, 156, 237));
+            /* background: linear-gradient(to bottom, rgb(170, 192, 246), rgb(124, 156, 237)); */
+            background-color: hsl(219 46% 22% / 1);
+            color: white;
         }
 
         footer h2 {
@@ -751,7 +761,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 2em 3.5em;
-            font-size: 1.1em;
+            /* font-size: 1.1em; */
         }
 
         .contacts-inner .item {
@@ -804,6 +814,16 @@
             .shapka .top img.polytech-logo {
                 max-height: 25px;
             }
+            .news .slider {
+                height: 500px;
+            }
+            .news .slider-item {
+                padding: 0;
+                font-size: 0.8em;
+            }
+            .news .border {
+                display: none;
+            }
             /* .slider {
                 height: 250px;
             }
@@ -820,7 +840,14 @@
             }
             .about-us-inner .item {
                 min-width: 100%;
-                padding: 1em;
+                padding: 2.5em 1em;
+                font-size: 1em;
+            }
+            .about-us-inner .item.light-bg::after {
+            background-image: linear-gradient(to top, rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.288));
+            }
+            .about-us-inner .item.dark-bg:after {
+                background-image: linear-gradient(to top, rgb(0 0 0 / 22.5%), rgb(0 0 0 / 45%), rgb(0 0 0 / 22.5%));
             }
             .faculty-inner .item {
                 font-size: 0.8em;
